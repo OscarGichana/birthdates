@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>KNOW YOUR AKAN NAME</title>
+    <meta charset="utf-8"/>
+    <script src="js/scripts.js"type="text/javascript">
+    </script>
+    <title>Birthdates</title>
   </head>
   <body>
-    <h1>What are we about?</h1>
+    <h1>KNOW YOUR AKAN NAME</h1>
+    <p id="welcome"></p>
+    <form>
+      what is your name:<input type="text" id="name"/><br/>
+      <input type="button" value="submit" onclick="writeName();"/>
+    </form>
+    <h2>What are we about?</h2>
     <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
-    <h2>Male</h2>
+    <p>This page helps you determine your Akan name by calculating the day of the week you were born and depending on your gender</p>
+    <h3>Male</h3>
     <ul>
       <li>Sunday: Kwasi</li>
       <li>Monday: Kwadwo</li>
@@ -16,7 +26,7 @@
       <li>Friday: Kofi</li>
       <li>Saturday: Kwame</li>
     </ul>
-    <h2>Female</h2>
+    <h3>Female</h3>
     <ul>
       <li>Sunday: Akosua</li>
       <li>Tuesday: Abenaa</li>
@@ -25,5 +35,26 @@
       <li>Friday: Afua</li>
       <li>Saturday: Ama</li>
     </ul>
+    <h3>Let's get started</h3>
+    <form>
+      Century Digits (1989 CC = 19):<input type="number" id="century"/><br/>
+      <input type="button" value="submit century" onclick="writeName();"/>
+    </form>
+
+    <form>
+      Year digits (1989 YY = 89):<input type="number" id="year"/><br/>
+      <input type="button" value="submit year" onclick="writeName();"/>
+    </form>
+
+    <form>
+      Month (1-12):<input type="number" id="month"/><br/>
+      <input type="button" value="submit month" onclick="writeName();"/>
+    </form>
+
+    <form>
+      Date (1-31):<input type="number" id="date"/><br/>
+      <input type="button" value="submit day" onclick="writeName();"/>
+    </form>
+
   </body>
 </html>
