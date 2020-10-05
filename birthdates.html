@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-  <title>Birthdates</title>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Birthdates</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body background="images/images.jpg">
     <div class="container">
@@ -23,8 +23,8 @@
               <li>Tuesday: Kwabena</li>
               <li>Wednesday: Kwaku</li>
               <li>Thursday:  Yaw</li>
-             <li>Friday: Kofi</li>
-             <li>Saturday: Kwame</li>
+              <li>Friday: Kofi</li>
+              <li>Saturday: Kwame</li>
            </ul>
          </div>
          <div class="col-md-6">
@@ -46,31 +46,37 @@
         <div class="card-body">
         <form>
           <div id="output">
-            <label>Enter your first name:</label>
-            <input type="text" id="name"placeholder="enter"/><br/>
-            <label>Century Digits (1989 CC = 19):</label>
-            <input type="number" id="century" placeholder="enter"/><br/>
-            <label>Enter Year of Birth (1989 YY = 89):</label>
-            <input type="number" class="forms-control" id="year" placeholder="enter" required*><br/>
+            <label>Year of Birth (eg 1989):</label>
+            <input type="number" class="forms-control" id="year" placeholder="YYYY" required*><br/>
             <label>Month of birth (1-12):</label>
-            <input type="number" id="month"placeholder="enter"/><br/>
-            <label>Day (1-31):</label>
-            <input type="number" id="day"placeholder="enter"/><br/>
+            <input type="number" id="month"placeholder="MM"/><br/>
+            <label>Day Of Birth (1-31):</label>
+            <input type="number" id="day"placeholder="DD"/><br/>
             <div class="gender">
-              <label>Gender</label>
-              <input type="radio" id="male" value="male">Male
-              <input type="radio" id="female" value="female"> Female
-              <input type="radio" id="other" value="other"> other
+              <label>Gender</label> <br>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="male">Female</label><br>
             </div>
           </div>
         </div>
         <div class="card-footer">
          <label>Try it out</label>
-         <button type="button" id="submit" onclick="Try it out:()">Submit</button>
+         <button type="button" id="submit" onclick="generateName()">Generate Name</button>
+         <br>
+         <br>
+         <label>Clear Form</label>
+         <button type="button" id="clear" onclick="clearForm()">Clear Form</button>
 
        </div>
     </div>
-    <script src="js/scripts.js"></script>
+    <div>
+      <h4 id ="display-name"><strong>Your Akan name will be displayed below:</strong></h4>
+      <p id="result"></p>
+    </div>
+
   </div>
+  <script src="js/scripts.js"></script>
   </body>
 </html>
