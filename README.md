@@ -1,5 +1,5 @@
 # birthdates
-#### https://oscargichana.github.io/portfolio/portfolio.html, {22/09/2020}
+#### https://oscargichana.github.io/birthdates/ {05/10/2020}
 #### By **{OscarGichana}**
 ## Description
 This is a Webpage created by the guidance of Moringa school to test my understanding on topics learned . To open copy and paste the link above and view contents of the webpage.
