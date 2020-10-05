@@ -1,0 +1,28 @@
+h1{
+  color:blue;
+  text-align: center;
+}
+h2, h3{
+  color:lime;
+}
+.row1 {
+  background-color: blue;
+  float: left;
+}
+.row2 {
+  background-color: green;
+}
+.card{
+  background-color: purple;
+  text-align: center;
+}
+
+
+.jumbotron{
+  background-color: lightblue;
+}
+
+
+#display-name {
+  color: green;
+}
